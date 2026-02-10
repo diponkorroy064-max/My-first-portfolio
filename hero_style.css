@@ -87,7 +87,7 @@ body {
     font-weight: bold;
 }
 
-/*projects section*/
+/*projects section related styles*/
 #projects,
 #skill,
 #experiance {
@@ -206,7 +206,7 @@ body {
 
 #footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .media {
@@ -224,7 +224,7 @@ body {
 }
 
 /*responsiveness*/
-.hide{
+.hide {
     display: none !important;
 }
 
@@ -326,6 +326,14 @@ body {
         background-size: 100%;
     }
 
+    #hero-container {
+        flex-direction: column;
+    }
+
+    .project-card {
+        flex-direction: column;
+    }
+
     .container {
         align-items: center;
         text-align: center;
@@ -349,3 +357,5 @@ body {
         align-items: center;
     }
 }
+
+
