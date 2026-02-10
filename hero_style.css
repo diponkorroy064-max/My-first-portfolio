@@ -88,7 +88,6 @@ body {
 }
 
 /*projects section*/
-
 #projects,
 #skill,
 #experiance {
@@ -127,7 +126,7 @@ body {
     margin-bottom: 20px;
 }
 
-
+/* Hero section related styles */
 #hero {
     padding: 100px;
     background: url("assets/Hero-bg.png");
@@ -170,7 +169,6 @@ body {
 
 #hero-image {
     width: 510px;
-
     align-items: center;
 }
 
@@ -226,6 +224,9 @@ body {
 }
 
 /*responsiveness*/
+.hide{
+    display: none !important;
+}
 
 /*laptop 1025px-1200px*/
 @media screen and (max-width:1200px) {
