@@ -1,245 +1,445 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Portfolio</title>
-    <link rel="shortcut icon" href="assets/icons8-moleskine-60.png" type="image/x-icon">
-    <link rel="stylesheet" href="hero_style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diponkor Roy | Front-End Developer</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
-<body>
-    <!--hero section-->
-    <div id="hero" class="">
-        <div id="hero-container" class="container">
-            <div id="hero-content">
-                <h1>Front-End Developer
-                    <span class="imp">Crafting</span> Modern Web Experiences
+<body class="container mx-auto bg-slate-950 text-white">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+            <h2 class="text-2xl font-bold text-cyan-400">
+                Diponkor.
+            </h2>
+
+            <ul class="hidden md:flex items-center gap-8 text-gray-300 font-medium">
+                <li><a href="#hero" class="hover:text-cyan-400 duration-300">Home</a></li>
+                <li><a href="#about" class="hover:text-cyan-400 duration-300">About</a></li>
+                <li><a href="#skills" class="hover:text-cyan-400 duration-300">Skills</a></li>
+                <li><a href="#projects" class="hover:text-cyan-400 duration-300">Projects</a></li>
+                <li><a href="#contact" class="hover:text-cyan-400 duration-300">Contact</a></li>
+            </ul>
+
+            <button class="bg-cyan-400 hover:bg-cyan-300 text-black font-semibold px-6 py-2 rounded-xl duration-300">
+                Hire Me
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section id="hero" class="min-h-screen flex items-center pt-28">
+
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+
+            <!-- Left Content -->
+
+            <div>
+
+                <p class="text-cyan-400 uppercase tracking-[5px] font-semibold mb-5">
+                    Front-End Developer
+                </p>
+
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+                    Crafting Modern
+                    <span class="text-cyan-400">Web Experiences</span>
                 </h1>
-                <p>passionate Front-End web developer with experience in designing and developing dynamic websites and
-                    applications.</p>
-                <div class="hero-button">
-                    <button class="btn">Explore Works</button>
-                    <button class="btn">Download CV</button>
-                </div>
-            </div>
-            <div id="hero-image">
-                <img src="assets/me.png" alt="">
-            </div>
-        </div>
-    </div>
 
-    <!-- Skill section -->
-    <div id="skill" class="">
-        <div id="skill-container" class="container">
-            <div class="heading">
-                <h4>SKILLS</h4>
-                <h2>Skills That Power My Code</h2>
-            </div>
-            <div class="card-box">
-                <div class="card">
-                    <img src="assets/html.png" alt="">
-                    <h3>HTML 5</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                    <a href="">Explore Works</a>
+                <p class="text-gray-400 mt-8 leading-relaxed text-lg max-w-2xl">
+                    Passionate Front-End Developer specializing in React,
+                    Next.js, Tailwind CSS, and modern web technologies.
+                    I build fast, responsive, and beautiful user interfaces.
+                </p>
+
+                <div class="flex flex-wrap gap-5 mt-10">
+
+                    <a href="https://github.com/diponkorroy064-max" target="_blank">
+                        <button
+                            class="bg-cyan-400 hover:bg-cyan-300 text-black px-8 py-4 rounded-2xl font-semibold duration-300 shadow-lg shadow-cyan-400/20">
+                            Explore Works
+                        </button>
+                    </a>
+
+                    <button
+                        class="border border-slate-700 hover:border-cyan-400 hover:text-cyan-400 px-8 py-4 rounded-2xl font-semibold duration-300">
+                        Download CV
+                    </button>
+
                 </div>
 
-                <div class="card">
-                    <img src="assets/css.png" alt="">
-                    <h3>CSS 3</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                    <a href="">Explore Works</a>
-                </div>
-
-                <div class="card">
-                    <img src="assets/js.png" alt="">
-                    <h3>JavaScript ( ES6)</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                    <a href="">Explore Works</a>
-                </div>
             </div>
 
-            <div class="card-box">
-                <div class="card">
-                    <img src="assets/react.png" alt="">
-                    <h3>React ( 19+)</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                    <a href="">Explore Works</a>
+
+            <!-- Right Image -->
+
+            <div class="flex justify-center">
+
+                <div
+                    class="relative bg-linear-to-tr from-cyan-500 to-blue-600 p-2 rounded-full shadow-2xl shadow-cyan-500/20">
+
+                    <img src="assets/me.png" alt="Diponkor Roy"
+                        class="w-[350px] h-[350px] object-cover rounded-full border-4 border-slate-950">
+
                 </div>
 
-                <div class="card">
-                    <img src="assets/next.png" alt="">
-                    <h3>Next JS ( 15+)</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                    <a href="">Explore Works</a>
-                </div>
-
-                <div class="card">
-                    <img src="assets/mui.png" alt="">
-                    <h3>Metarial UI</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                    <a href="">Explore Works</a>
-                </div>
-            </div>
-
-            <div class="card-box">
-                <div class="card">
-                    <img src="assets/typescript.png" alt="">
-                    <h3>TypeScript</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                    <a href="">Explore Works</a>
-                </div>
-
-                <div class="card">
-                    <img src="assets/redux.png" alt="">
-                    <h3>Redux</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                    <a href="">Explore Works</a>
-                </div>
-
-                <div class="card">
-                    <img src="assets/socket.png" alt="">
-                    <h3>Socket.io</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing.</p>
-                    <a href="">Explore Works</a>
-                </div>
             </div>
 
         </div>
-    </div>
 
-    <!-- Projects Section -->
-    <div id="projects" class="">
-        <div id="projects-container" class="container">
-            <div class="heading">
-                <h4>PROJECTS</h4>
-                <h2>My Recent Works</h2>
+    </section>
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section id="about" class="py-28 bg-slate-900">
+
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+
+            <div>
+
+                <img src="assets/me.png" alt="About Diponkor" class="rounded-3xl border border-slate-700 shadow-2xl">
+
             </div>
 
-            <div id="project-box">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="assets/project-doctoriano.png" alt="">
+            <div>
+
+                <p class="text-cyan-400 uppercase tracking-[5px] font-semibold mb-4">
+                    About Me
+                </p>
+
+                <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+                    Passionate Developer Focused on User Experience
+                </h2>
+
+                <p class="text-gray-400 mt-8 leading-relaxed text-lg">
+                    I am a Front-End Developer with strong expertise in React,
+                    Next.js, Tailwind CSS, Redux, and TypeScript. I enjoy
+                    creating modern and responsive websites with clean code
+                    and engaging user interfaces.
+                </p>
+
+                <div class="grid grid-cols-2 gap-6 mt-10">
+
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                        <h3 class="text-3xl font-bold text-cyan-400">15+</h3>
+                        <p class="text-gray-400 mt-2">Completed Projects</p>
                     </div>
-                    <div class="project-content">
-                        <h3>Doctoriano</h3>
-                        <p>June 2025 - November 2025</p>
-                        <p>
-                            Not until the creation and maintenance of decent conditions of life for all people are
-                            recognized and accepted as a
-                            common obligation of all people and all countries—not until then shall we,
-                            with a certain degree of justification, be able to speak of humankind as civilized
+
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                        <h3 class="text-3xl font-bold text-cyan-400">2+</h3>
+                        <p class="text-gray-400 mt-2">Years Experience</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS SECTION ================= -->
+
+    <section id="skills" class="py-28">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-20">
+
+                <p class="text-cyan-400 uppercase tracking-[5px] font-semibold mb-3">
+                    Skills
+                </p>
+
+                <h2 class="text-4xl md:text-5xl font-bold">
+                    Skills That Power My Code
+                </h2>
+
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Card -->
+
+                <div
+                    class="bg-slate-900 border border-slate-800 rounded-3xl p-10 hover:border-cyan-400 hover:-translate-y-2 duration-300 text-center">
+
+                    <img src="assets/html.png" alt="HTML" class="w-20 h-20 object-contain mx-auto">
+
+                    <h3 class="text-2xl font-semibold mt-6">HTML5</h3>
+
+                    <p class="text-gray-400 mt-4 leading-relaxed">
+                        Build structured and semantic layouts for modern web
+                        applications.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="bg-slate-900 border border-slate-800 rounded-3xl p-10 hover:border-cyan-400 hover:-translate-y-2 duration-300 text-center">
+
+                    <img src="assets/css.png" alt="CSS" class="w-20 h-20 object-contain mx-auto">
+
+                    <h3 class="text-2xl font-semibold mt-6">CSS3</h3>
+
+                    <p class="text-gray-400 mt-4 leading-relaxed">
+                        Create responsive and modern UI designs with clean styling.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="bg-slate-900 border border-slate-800 rounded-3xl p-10 hover:border-cyan-400 hover:-translate-y-2 duration-300 text-center">
+
+                    <img src="assets/js.png" alt="JavaScript" class="w-20 h-20 object-contain mx-auto">
+
+                    <h3 class="text-2xl font-semibold mt-6">JavaScript</h3>
+
+                    <p class="text-gray-400 mt-4 leading-relaxed">
+                        Develop interactive and dynamic functionalities for websites.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="bg-slate-900 border border-slate-800 rounded-3xl p-10 hover:border-cyan-400 hover:-translate-y-2 duration-300 text-center">
+
+                    <img src="assets/react.png" alt="React" class="w-20 h-20 object-contain mx-auto">
+
+                    <h3 class="text-2xl font-semibold mt-6">React</h3>
+
+                    <p class="text-gray-400 mt-4 leading-relaxed">
+                        Build scalable and component-based user interfaces.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="bg-slate-900 border border-slate-800 rounded-3xl p-10 hover:border-cyan-400 hover:-translate-y-2 duration-300 text-center">
+
+                    <img src="assets/next.png" alt="Next JS" class="w-20 h-20 object-contain mx-auto">
+
+                    <h3 class="text-2xl font-semibold mt-6">Next.js</h3>
+
+                    <p class="text-gray-400 mt-4 leading-relaxed">
+                        Create fast server-rendered and SEO optimized applications.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="bg-slate-900 border border-slate-800 rounded-3xl p-10 hover:border-cyan-400 hover:-translate-y-2 duration-300 text-center">
+
+                    <img src="assets/typescript.png" alt="TypeScript" class="w-20 h-20 object-contain mx-auto">
+
+                    <h3 class="text-2xl font-semibold mt-6">TypeScript</h3>
+
+                    <p class="text-gray-400 mt-4 leading-relaxed">
+                        Write scalable and maintainable applications with strong typing.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS SECTION ================= -->
+
+    <section id="projects" class="py-28 bg-slate-900">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-20">
+
+                <p class="text-cyan-400 uppercase tracking-[5px] font-semibold mb-3">
+                    Projects
+                </p>
+
+                <h2 class="text-4xl md:text-5xl font-bold">
+                    My Recent Works
+                </h2>
+
+            </div>
+
+
+            <div class="space-y-20">
+
+                <!-- Project Card -->
+
+                <div
+                    class="grid lg:grid-cols-2 gap-12 items-center bg-slate-950 border border-slate-800 rounded-3xl p-8 md:p-12 hover:border-cyan-400 duration-300">
+
+                    <div class="overflow-hidden rounded-3xl">
+
+                        <img src="assets/pet-platform.png" alt="Pet Haven"
+                            class="rounded-3xl hover:scale-105 duration-500">
+
+                    </div>
+
+                    <div>
+
+                        <span class="bg-cyan-400/10 text-cyan-400 px-5 py-2 rounded-full text-sm">
+                            Full Stack Application
+                        </span>
+
+                        <h3 class="text-4xl font-bold mt-6">
+                            Pet Haven
+                        </h3>
+
+                        <p class="text-gray-400 mt-4 leading-relaxed">
+                            Pet Haven is a modern pet adoption platform built with the MERN stack.
+                            Users can explore pets, send adoption requests, and manage profiles securely.
                         </p>
-                        <button class="btn">Download App</button>
-                    </div>
-                </div>
 
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>IELTSTAR</h3>
-                        <p>September 2025 - October 2025</p>
-                        <p>Not until the creation and maintenance of decent conditions of life for all people are
-                            recognized and accepted as a
-                            common obligation of all people and all countries—not until then shall we,
-                            with a certain degree of justification, be able to speak of humankind as civilized</p>
-                        <button class="btn">Explore Website</button>
-                    </div>
-                    <div class="project-img">
-                        <img src="assets/project-ieltstar.png" alt="">
-                    </div>
-                </div>
+                        <div class="flex flex-wrap gap-3 mt-6">
+                            <span class="bg-slate-800 px-4 py-2 rounded-full">React</span>
+                            <span class="bg-slate-800 px-4 py-2 rounded-full">MongoDB</span>
+                            <span class="bg-slate-800 px-4 py-2 rounded-full">Express</span>
+                            <span class="bg-slate-800 px-4 py-2 rounded-full">JWT</span>
+                        </div>
 
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="assets/project-mewopay.png" alt="">
-                    </div>
-                    <div class="project-content">
-                        <h3>MewoPay</h3>
-                        <p>January 2025 - June 2025</p>
-                        <p>Not until the creation and maintenance of decent conditions of life for all people are
-                            recognized and accepted as a
-                            common obligation of all people and all countries—not until then shall we,
-                            with a certain degree of justification, be able to speak of humankind as civilized</p>
-                        <button class="btn">Explore Website</button>
+                        <div class="flex flex-wrap gap-5 mt-8">
+
+                            <a href="https://pet-adoption-platform-blush.vercel.app" target="_blank">
+                                <button
+                                    class="bg-cyan-400 hover:bg-cyan-300 text-black px-7 py-3 rounded-xl font-semibold duration-300">
+                                    Live Demo
+                                </button>
+                            </a>
+
+                            <button
+                                class="border border-slate-700 hover:border-cyan-400 hover:text-cyan-400 px-7 py-3 rounded-xl duration-300">
+                                GitHub Repo
+                            </button>
+
+                        </div>
+
                     </div>
 
                 </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Experiance Section -->
-    <div id="experiance" class="">
-        <div id="experiance-container" class="container">
-            <div class="heading">
-                <h4>EXPERIENCE</h4>
-                <h2>Brands That Trusted My Work</h2>
-            </div>
-            <div class="company-card">
-                <div class="Brands">
-                    <img src="assets/brands-1.png" alt="">
-                </div>
-
-                <div class="Brands">
-                    <img src="assets/brands-2.png" alt="">
-                </div>
-
-                <div class="Brands">
-                    <img src="assets/brands-3.png" alt="">
-                </div>
-
-                <div class="Brands">
-                    <img src="assets/brands-4.png" alt="">
-                </div>
-
-                <div class="Brands">
-                    <img src="assets/brands-5.png" alt="">
-                </div>
-
-                <div class="Brands">
-                    <img src="assets/brands-6.png" alt="">
-                </div>
-
-                <div class="Brands">
-                    <img src="assets/brands-7.png" alt="">
-                </div>
-            </div>
-
-            <div class="hero-button">
-                <button class="btn">Explore Now</button>
             </div>
 
         </div>
-    </div>
 
-    <!-- Footer Section -->
-    <div id="footer" class="">
-        <div id="footer-container" class="container">
-            <div class="footer-text">
-                <p>© 2026 , ferdous Zihad - All Right Reserved</p>
-            </div>
-            <div class="media">
-                <div class="type">
-                    <img src="assets/icon-fb.png" alt="">
-                </div>
-                <div class="type">
-                    <img src="assets/icon-github.png" alt="">
-                </div>
-                <div class="type">
-                    <img src="assets/icon-instagram.png" alt="">
-                </div>
-            </div>
+    </section>
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section id="contact" class="py-28">
+
+        <div class="max-w-4xl mx-auto px-6 text-center">
+
+            <p class="text-cyan-400 uppercase tracking-[5px] font-semibold mb-3">
+                Contact
+            </p>
+
+            <h2 class="text-4xl md:text-5xl font-bold">
+                Let's Work Together
+            </h2>
+
+            <p class="text-gray-400 mt-6 leading-relaxed max-w-2xl mx-auto">
+                Interested in working together or have any project idea?
+                Feel free to contact me anytime.
+            </p>
+
+            <form class="mt-14 space-y-6">
+
+                <input type="text" placeholder="Your Name"
+                    class="w-full bg-slate-900 border border-slate-800 rounded-2xl px-6 py-4 outline-none focus:border-cyan-400">
+
+                <input type="email" placeholder="Your Email"
+                    class="w-full bg-slate-900 border border-slate-800 rounded-2xl px-6 py-4 outline-none focus:border-cyan-400">
+
+                <textarea rows="6" placeholder="Your Message"
+                    class="w-full bg-slate-900 border border-slate-800 rounded-2xl px-6 py-4 outline-none focus:border-cyan-400"></textarea>
+
+                <button
+                    class="bg-cyan-400 hover:bg-cyan-300 text-black font-semibold px-8 py-4 rounded-2xl duration-300">
+                    Send Message
+                </button>
+
+            </form>
+
         </div>
-    </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="border-t border-slate-800 py-8">
+
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+
+            <p class="text-gray-400 text-center md:text-left">
+                © 2026 Diponkor Roy. All Rights Reserved.
+            </p>
+
+            <div class="flex items-center gap-5">
+
+                <a href="#"
+                    class="w-12 h-12 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:border-cyan-400 duration-300">
+                    FB
+                </a>
+
+                <a href="https://github.com/diponkorroy064-max" target="_blank"
+                    class="w-12 h-12 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:border-cyan-400 duration-300">
+                    GH
+                </a>
+
+                <a href="#"
+                    class="w-12 h-12 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:border-cyan-400 duration-300">
+                    IN
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
 </body>
+
 </html>
-
-
-
